@@ -14,9 +14,10 @@ spring:
           predicates:
             - Path=/user/**
             - Path=/user2/**
+            - Path=/userConfig/**
 
         - id: productslsconfig_route
-          uri: lb://productslsconfig         # lb: 使用负载均衡策略   users代表注册中心的具体服务名
+          uri: lb://productslsconfig9995         # lb: 使用负载均衡策略   users代表注册中心的具体服务名
           predicates:
             - Path=/productConfig/**
 
